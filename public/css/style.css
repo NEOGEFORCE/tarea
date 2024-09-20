@@ -1,0 +1,165 @@
+/* Importar una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo básico para el cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0e5cf, #d1e8e2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del contenedor del menú */
+#menu {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+#menu:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo del título principal */
+h1 {
+    color: #2f4f4f;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    margin-bottom: 20px;
+}
+
+/* Estilo del contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta del menú */
+.card {
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de los enlaces "Aprender más" */
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50; /* Color verde */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+}
+
+/* Estilo del contenido de las listas */
+#content {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#content:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+/* Estilo del texto de ejemplo */
+.example-output {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #2f4f4f;
+}
+
+/* Estilo del botón de volver al menú */
+.back-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-button a:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.back-button a:active {
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    #menu, #content {
+        padding: 20px;
+    }
+
+    .menu-button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .menu-button h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-button p {
+        font-size: 0.8rem;
+    }
+}
